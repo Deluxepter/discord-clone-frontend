@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# DOXA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DOXA is a free social app that lets you chat and talk with friends, communities, and developers. Inspired by Discord.
 
-## Available Scripts
+This is the front-end built with React. The back-end is built with Spring [here]("https://TODO").
 
-In the project directory, you can run:
 
-### `npm start`
+## Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Demo](#demo)
+- [Packages](#packages)
+- [Installation](#installation)
+- [ToDo](#todo)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+N/A
 
-### `npm run build`
+## Packages
+| Name                       | Description                                                                            |
+|----------------------------|----------------------------------------------------------------------------------------|
+| react-icons                | Open-source icons for React                                                            |
+| axios                      | Promise based HTTP client                                                              |
+| sass                       | Sass is a preprocessor scripting language that is  compiled into CSS                   |
+| react-detect-click-outside | A lightweight React hook that detects clicks outside elements and triggers a callback. |
+| react-redux                | Official React bindings for Redux                                                      |
+| reduxjs/toolkit            | The official, opinionated, batteries-included toolset for efficient Redux development  |
+| framer-motion              | An open source motion library for Reac                                                 |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the project
 
-### `npm run eject`
+```
+git clone https://github.com/deluxepter/doxa-frontend.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd doxa-frontend
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install packages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the server
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ToDo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Create beta
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [GNU General Public License v3.0](https://github.com/Deluxepter/doxa-frontend/blob/master/LICENSE) - see
+the LICENSE.md file for details.

@@ -1,0 +1,21 @@
+.servericon {
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__tooltip {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: all .2s;
+  }
+
+  &__icon:hover {
+    border-radius: 35%;
+  }
+}
+

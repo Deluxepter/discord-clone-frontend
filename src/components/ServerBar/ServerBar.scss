@@ -1,0 +1,51 @@
+@use "../../styles/colors";
+
+.serverbar {
+  background-color: colors.$discord-9;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  gap: 6px;
+
+  &__divider {
+    color: colors.$discord-5;
+    width: 30px;
+  }
+
+  &__direct-messages {
+    color: white;
+    background-color: colors.$discord-7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    transition: all .2s;
+  }
+
+  &__direct-messages:hover {
+    border-radius: 35%;
+    background-color: colors.$discord-1;
+  }
+
+  &__add-server {
+    color: #3ba55d;
+    background-color: colors.$discord-7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+

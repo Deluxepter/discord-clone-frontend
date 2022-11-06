@@ -1,0 +1,13 @@
+@use "../../styles/colors";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: brown;
+
+  &__section {
+    height: 100%;
+    display: flex;
+  }
+}

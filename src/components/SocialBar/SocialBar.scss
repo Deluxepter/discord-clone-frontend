@@ -1,0 +1,7 @@
+@use "../../styles/colors";
+
+.socialbar {
+  width: 240px;
+  background-color: colors.$discord-7;
+  flex-shrink: 0;
+}

@@ -1,4 +1,4 @@
-# Discord Clone Frontend
+# 💬 Discord Clone
 
 A real-time social app that lets you chat and talk with friends, communities, and developers. Inspired by Discord.
 

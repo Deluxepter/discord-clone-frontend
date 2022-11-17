@@ -1,6 +1,6 @@
-# DOXA
+# Discord Clone Frontend
 
-DOXA is a free social app that lets you chat and talk with friends, communities, and developers. Inspired by Discord.
+A real-time social app that lets you chat and talk with friends, communities, and developers. Inspired by Discord.
 
 This is the front-end built with React. The back-end is built with Spring [here]("https://TODO").
 
@@ -35,9 +35,9 @@ N/A
 Clone the project
 
 ```
-git clone https://github.com/deluxepter/doxa-frontend.git
+git clone https://github.com/deluxepter/discord-clone-frontend.git
 
-cd doxa-frontend
+cd discord-clone-frontend
 ```
 
 Install packages
@@ -58,5 +58,5 @@ npm start
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](https://github.com/Deluxepter/doxa-frontend/blob/master/LICENSE) - see
+This project is licensed under the [GNU General Public License v3.0](https://github.com/Deluxepter/discord-clone-frontend/blob/master/LICENSE) - see
 the LICENSE.md file for details.

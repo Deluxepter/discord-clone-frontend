@@ -5,11 +5,14 @@ import GroupBar from "../GroupBar/GroupBar";
 import Main from "../Main/Main";
 
 export default function App() {
-  return (
-    <div className="app">
-        <ServerBar/>
-        <GroupBar/>
-        <Main/>
-    </div>
-  );
+
+    const currentServerId = 18984156;
+
+    return (
+        <div className="app">
+            <ServerBar/>
+            <GroupBar currentServerId={currentServerId}/>
+            <Main/>
+        </div>
+    );
 }

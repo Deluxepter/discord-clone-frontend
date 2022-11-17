@@ -1,8 +1,14 @@
 import './ServerIcon.css';
 import ReactTooltip from "react-tooltip";
+import {useEffect, useState} from "react";
 
 export default function ServerIcon(props){
-    console.log(props.server)
+
+    const [server, setServer] = useState();
+
+    useEffect(() => {
+
+    }, [])
     return(
         <div className="servericon">
             <img

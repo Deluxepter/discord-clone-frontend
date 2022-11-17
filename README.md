@@ -1,6 +1,8 @@
-# 💬 Discord Clone
+# Discord Clone
 
-A real-time social app that lets you chat and talk with friends, communities, and developers. Inspired by Discord.
+🛠️ Under Development 🛠️
+
+A real-time social app that lets you chat and talk with friends, communities, and developers. Inspired by [Discord](https://discord.com/).
 
 This is the front-end built with React. The back-end is built with Spring [here]("https://TODO").
 

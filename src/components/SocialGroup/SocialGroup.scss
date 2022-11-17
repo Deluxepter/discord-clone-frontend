@@ -1,0 +1,15 @@
+@use "../../styles/colors";
+
+.socialgroup {
+  display: flex;
+  flex-direction: column;
+  color: colors.$discord-3;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 1px;
+
+  &__title {
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
+}

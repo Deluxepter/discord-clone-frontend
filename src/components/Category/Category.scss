@@ -1,0 +1,38 @@
+@use "../../styles/colors";
+
+.category {
+  color: colors.$discord-3;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 10px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 8px;
+
+    &__collapse-icon {
+      margin-top: 2px;
+    }
+
+    &__add-icon {
+      margin-left: auto;
+      right: 5px;
+    }
+  }
+
+  &__header:hover {
+    color: colors.$discord-2;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 8px 8px;
+  }
+}

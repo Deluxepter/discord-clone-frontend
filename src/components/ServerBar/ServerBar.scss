@@ -10,7 +10,7 @@
   gap: 6px;
 
   &__divider {
-    color: colors.$discord-5;
+    border-color: colors.$discord-5;
     width: 30px;
   }
 
@@ -42,6 +42,11 @@
     cursor: pointer;
     width: 48px;
     height: 48px;
+    transition: all .2s;
+  }
+
+  &__add-server:hover {
+    border-radius: 35%;
   }
 }
 

@@ -1,0 +1,34 @@
+@use "../../styles/colors";
+
+.person{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  padding-inline: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+
+  &__avatar {
+    &__icon {
+      border-radius: 50%;
+      height: 32px;
+      transition: all .2s;
+      /* https://stackoverflow.com/a/14054008 */
+      vertical-align: bottom;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: colors.$discord-3;
+  }
+}
+
+.person:hover {
+  background-color: colors.$discord-4;
+}

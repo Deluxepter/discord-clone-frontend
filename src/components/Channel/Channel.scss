@@ -1,0 +1,44 @@
+@use "../../styles/colors";
+
+.channel {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 13px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &__title {
+    flex: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px;
+  }
+
+  &__settings-icon:hover {
+    color: white;
+  }
+
+
+  &__grid-icon {
+    margin-top: 1px;
+  }
+}
+
+.channel:hover {
+  color: colors.$discord-2;
+  background-color: colors.$discord-5;
+}
+
+.channel__settings-icon {
+  display: none;
+}
+
+.channel:hover .channel__settings-icon {
+  display: block;
+}

@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -23,6 +27,10 @@ hr {
   overflow: visible; /* 2 */
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
 
 pre {
   font-family: monospace, monospace; /* 1 */

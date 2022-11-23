@@ -6,6 +6,7 @@ A real-time social app that lets you chat and talk with friends, communities, an
 
 This is the front-end built with React. The back-end is built with Spring [here]("https://TODO").
 
+<img src="https://github.com/Deluxepter/discord-clone-frontend/blob/master/resources/example.png" width="600"/>
 
 ## Contents
 

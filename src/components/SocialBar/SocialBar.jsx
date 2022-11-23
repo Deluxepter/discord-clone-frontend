@@ -1,10 +1,19 @@
 import './SocialBar.css';
-import SocialGroup from "../SocialGroup/SocialGroup";
+import SocialCategory from "../SocialGroup/SocialGroup";
+import {getOfflineUsers, getOnlineUsers} from "../../mockData";
+import {useSelector} from "react-redux";
+import {selectSelectedServer} from "../../redux/globalSlice";
 
 export default function SocialBar(){
+
+    const selectedServer = useSelector(selectSelectedServer)
+    const onlineUsers = getOnlineUsers(selectedServer)
+    const offlineUsers = getOfflineUsers(selectedServer)
+
     return(
         <div className="socialbar">
-            <SocialGroup/>
+            <SocialCategory title="Online" users={onlineUsers}/>
+            <SocialCategory title="Offline" users={offlineUsers}/>
         </div>
     )
 }

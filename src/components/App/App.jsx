@@ -1,18 +1,16 @@
 import './App.css';
 import './normalize.css';
-import ServerBar from "../ServerBar/ServerBar";
-import GroupBar from "../GroupBar/GroupBar";
-import Main from "../Main/Main";
+import Serverbar from "../Serverbar/Serverbar";
+import Sidebar from "../Sidebar/Sidebar";
+import MainContent from "../MainContent/MainContent";
 
 export default function App() {
 
-    const currentServerId = 18984156;
-
     return (
         <div className="app">
-            <ServerBar/>
-            <GroupBar currentServerId={currentServerId}/>
-            <Main/>
+            <Serverbar/>
+            <Sidebar/>
+            <MainContent/>
         </div>
     );
 }

@@ -1,0 +1,96 @@
+@use "../../styles/colors";
+
+.user{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  padding-inline: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+
+  &__avatar {
+    position: relative;
+    &__icon {
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      object-fit: cover;
+      transition: all .2s;
+      /* https://stackoverflow.com/a/14054008 */
+      vertical-align: bottom;
+    }
+
+    &__status {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 50%;
+
+      background-color: colors.$discord-7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__icon {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      &__icon-online {
+        background-color: colors.$status-online;
+      }
+
+      &__icon-dnd {
+        background-color: colors.$status-dnd;
+      }
+
+      &__icon-idle {
+        border-radius:50%;
+        box-shadow:4px 4px 0 0 colors.$status-idle;
+        position: absolute;
+        right: 7px;
+        bottom: 7px;
+      }
+
+      &__icon-offline {
+        width: 4px;
+        height: 4px;
+        margin-left: -1px;
+        border: 3px solid colors.$status-offline;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &__username {
+      font-size: 14px;
+      font-weight: 600;
+      padding-left: 10px;
+      color: colors.$discord-3;
+    }
+
+    &__description {
+      font-size: 10px;
+      font-weight: 500;
+      padding-left: 10px;
+      color: colors.$discord-35;
+    }
+  }
+}
+
+.user:hover {
+  background-color: colors.$discord-4;
+}
+
+.user:hover .user__avatar__status {
+  background-color: colors.$discord-4;
+}
+

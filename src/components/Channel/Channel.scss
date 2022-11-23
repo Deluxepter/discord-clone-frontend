@@ -42,3 +42,10 @@
 .channel:hover .channel__settings-icon {
   display: block;
 }
+
+.channel-selected {
+  pointer-events: none;
+  color: white;
+  background-color: colors.$discord-4;
+  cursor: pointer;
+}

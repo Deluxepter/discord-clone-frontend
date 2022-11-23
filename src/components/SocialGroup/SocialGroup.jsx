@@ -1,20 +1,13 @@
 import './SocialGroup.css';
-import User from "../Person/User";
-import {useEffect, useState} from "react";
-import {server_users} from "../../mockData";
+import User from "../User/User";
 
+export default function SocialCategory(props){
 
-export default function SocialGroup(){
-
-    const [users, setUsers] = useState()
-
-    useEffect(() => {
-
-    }, [])
+    let users = props.users.map(user => <User user={user}/>)
 
     return(
         <div className="socialgroup">
-            <p className="socialgroup__title">Engineers - 1</p>
+            <p className="socialgroup__title">{props.title} - {props.users.length}</p>
             {users}
         </div>
     )

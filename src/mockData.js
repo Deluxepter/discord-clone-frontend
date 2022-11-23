@@ -46,64 +46,74 @@ const categories = [
 
 const channels = [
     {
-        "channel_id": "channel1",
+        "channel_id": "1",
         "type": "text",
         "name": "rules",
         "category_id": "1",
+        "topic": "Guidelines to take into account when doing anything on this Discord. Be responsible over your activities.",
     },
     {
-        "channel_id": "channel2",
+        "channel_id": "2",
         "type": "text",
         "name": "announcements",
         "category_id": "1",
+        "topic": "Any official announcements will be posted here.",
     },
     {
-        "channel_id": "channel3",
+        "channel_id": "3",
         "type": "text",
         "name": "support",
         "category_id": "1",
+        "topic": "",
     },
     {
-        "channel_id": "channel4",
+        "channel_id": "4",
         "type": "text",
         "name": "feedback",
         "category_id": "1",
+        "topic": "",
     },
     {
-        "channel_id": "channel5",
+        "channel_id": "5",
         "type": "text",
         "name": "discussion",
         "category_id": "2",
+        "topic": "",
     },
     {
-        "channel_id": "channel6",
+        "channel_id": "6",
         "type": "voice",
         "name": "Homework-1",
         "category_id": "2",
+        "topic": "",
     },
     {
-        "channel_id": "channel7",
+        "channel_id": "7",
         "type": "voice",
         "name": "Homework-2",
         "category_id": "2",
+        "topic": "",
     },
     {
-        "channel_id": "channel8",
+        "channel_id": "8",
         "type": "voice",
         "name": "Lounge",
         "category_id": "2",
+        "topic": "",
     },
     {
-        "channel_id": "channel9",
+        "channel_id": "9",
         "type": "voice",
         "name": "greeints",
         "category_id": "3",
+        "topic": "",
     },
     {
-        "channel_id": "channel10",
+        "channel_id": "10",
         "type": "text",
         "name": "rules",
         "category_id": "4",
+        "topic": "",
     },
 ]
 
@@ -118,11 +128,11 @@ const users = [
     },
     {
         "id": "2",
-        "name": "Grawnpa",
+        "name": "poptart",
         "avatar_path": "https://cdn.pixabay.com/photo/2022/11/01/12/45/cormorant-7562187__340.jpg",
         "tag": "1561",
         "status": "online",
-        "description": ""
+        "description": "time is precious, waste it wisely"
     },
     {
         "id": "3",
@@ -190,6 +200,10 @@ function getCategories(serverId){
     return categories.filter(category => category.server_id == serverId)
 }
 
+function getChannel(channelId) {
+    return channels.find(channel => channel.channel_id == channelId)
+}
+
 function getChannels(categoryId){
     return channels.filter(channel => channel.category_id === categoryId)
 }
@@ -215,6 +229,7 @@ export {
     getServers,
     getCategory,
     getCategories,
+    getChannel,
     getChannels,
     getUser,
     getOnlineUsers,

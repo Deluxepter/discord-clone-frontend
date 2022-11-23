@@ -3,7 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
     userID: 1,
     selectedServer: 18984156,
-    selectedChannel: 0,
+    selectedChannel: 1,
 }
 
 export const globalSlice = createSlice({

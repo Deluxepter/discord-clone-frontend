@@ -19,7 +19,9 @@ This is the front-end built with React. The back-end is built with Spring [here]
 
 ## Demo
 
-N/A
+Note: This build is still in alpha and may have missing features or contain bugs
+
+https://discord-clone-frontend.netlify.app/
 
 ## Packages
 | Name                       | Description                                                                            |
@@ -31,6 +33,8 @@ N/A
 | react-redux                | Official React bindings for Redux                                                      |
 | reduxjs/toolkit            | The official, opinionated, batteries-included toolset for efficient Redux development  |
 | framer-motion              | An open source motion library for Reac                                                 |
+| react-tooltip              | Popup on hover                                                                         |
+| normalize.css              | Browsers render all elements more consistently and in line with modern standards.      |
 
 
 ## Installation

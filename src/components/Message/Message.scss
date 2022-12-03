@@ -1,0 +1,70 @@
+@use "../../styles/colors";
+
+.message {
+  display: flex;
+  gap: 14px;
+  padding: 5px;
+  padding-bottom: 2px;
+  padding-inline: 16px;
+
+  &-simple {
+    padding: 6px;
+    padding-left: 70px;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: colors.$discord-2;
+  }
+
+  &-full {
+    margin-top: 10px;
+  }
+
+  &__avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &__username {
+        font-size: 13.5px;
+        font-weight: 650;
+        color: white;
+      }
+
+      &__time {
+        font-size: 11.5px;
+        font-weight: 500;
+        color: colors.$discord-3;
+      }
+    }
+
+    &__section {
+      font-size: 13.5px;
+      font-weight: 400;
+      color: colors.$discord-2;
+
+      &__image {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 500px;
+        max-height: 350px;
+      }
+    }
+  }
+}
+
+.message:hover {
+  background-color: colors.$discord-6;
+}

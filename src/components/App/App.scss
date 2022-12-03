@@ -1,11 +1,15 @@
 @import "../../styles/fonts";
 
 .app {
-  display: flex;
+  display: grid;
   height: 100vh;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  /*
+  you can do this whaaaaaa i just spent 6 hours with flexbox stopping shit from randomly overflowing everywhere
+  */
+  grid-template-columns: 72px 240px auto 250px;
+  grid-template-rows: 48px auto 48px;
+  grid-template-areas:
+    'serverbar sidebar header header'
+    'serverbar sidebar chat socialbar'
+    'serverbar sidebar chat socialbar';
 }

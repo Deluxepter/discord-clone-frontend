@@ -1,12 +1,12 @@
 @use "../../styles/colors";
 
 .socialbar {
+  grid-area: socialbar;
+
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 240px;
+  gap: 22px;
   background-color: colors.$discord-7;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  padding: 20px 12px 12px;
+  padding: 20px 12px 20px 12px;
+  overflow-y: auto;
 }

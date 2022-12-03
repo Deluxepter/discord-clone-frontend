@@ -2,7 +2,9 @@ import './App.css';
 import './normalize.css';
 import Serverbar from "../Serverbar/Serverbar";
 import Sidebar from "../Sidebar/Sidebar";
-import MainContent from "../MainContent/MainContent";
+import Chat from "../Chat/Chat";
+import SocialBar from "../SocialBar/SocialBar";
+import Header from "../Header/Header";
 
 export default function App() {
 
@@ -10,7 +12,9 @@ export default function App() {
         <div className="app">
             <Serverbar/>
             <Sidebar/>
-            <MainContent/>
+            <Chat/>
+            <SocialBar/>
+            <Header/>
         </div>
     );
 }

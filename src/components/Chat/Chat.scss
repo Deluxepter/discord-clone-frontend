@@ -1,6 +1,53 @@
 @use "../../styles/colors";
 
 .chat {
-  width: 100%;
+  grid-area: chat;
+
+  display: flex;
+  flex-direction: column;
   background-color: colors.$discord-5;
+
+  &__messages {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100vh - 48px - 78px);
+  }
+
+  &__form {
+    display: flex;
+    box-sizing: border-box;
+    flex: 0;
+    padding: 12px;
+    padding-inline: 16px;
+    height: 46px;
+    align-items: center;
+    background-color: colors.$discord-375;
+    border-radius: 8px;
+    gap: 12px;
+    margin: 15px;
+
+    &__input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      font-size: 14px;
+      outline: none;
+    }
+
+    &__input::placeholder {
+      color: colors.$discord-3;
+    }
+
+    &__icon {
+      color: colors.$discord-2;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    &__icon:hover {
+      color: #e7e7e7;
+    }
+  }
 }

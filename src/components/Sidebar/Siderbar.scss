@@ -1,11 +1,12 @@
 @use "../../styles/colors";
 
 .sidebar {
+  grid-area: sidebar;
+
   display: flex;
   flex-direction: column;
   background-color: colors.$discord-7;
   width: 240px;
-  position: relative;
 
   &__header {
     display: flex;
@@ -29,6 +30,7 @@
   }
 
   &__categories {
+    max-height: calc(100vh - 48px - 52px);
     overflow-y: auto;
   }
 

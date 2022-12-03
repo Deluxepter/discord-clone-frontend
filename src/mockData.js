@@ -62,9 +62,9 @@ const channels = [
     {
         "channel_id": "3",
         "type": "text",
-        "name": "support",
+        "name": "discussion",
         "category_id": "1",
-        "topic": "",
+        "topic": "Feel free to start conversations",
     },
     {
         "channel_id": "4",
@@ -76,7 +76,7 @@ const channels = [
     {
         "channel_id": "5",
         "type": "text",
-        "name": "discussion",
+        "name": "voice-chat",
         "category_id": "2",
         "topic": "",
     },
@@ -183,6 +183,89 @@ const user_servers = [
     },
 ]
 
+const messages = [
+    {
+        "message_id": "1",
+        "text": "Basic rules:",
+        "time": "11/18/2022 3:56am",
+        "type": "full",
+        "user_id": "3",
+        "channel_id": "1",
+    },
+    {
+        "message_id": "2",
+        "text": "1) Do not insult or harass other members. This includes being discriminatory to others.",
+        "time": "11/18/2022 3:56am",
+        "type": "simple",
+        "user_id": "3",
+        "channel_id": "1",
+    },
+    {
+        "message_id": "3",
+        "text": "2) Do not solicit, beg, auction, sell, advertise, refer, or recruit without Admin permission. This applies to people's PMs as well.",
+        "time": "11/18/2022 3:56am",
+        "type": "simple",
+        "user_id": "3",
+        "channel_id": "1",
+    },
+    {
+        "message_id": "4",
+        "text": "3) Do not leave and join the server to bypass a warn/mute, you will get banned. Same goes for alt accounts.",
+        "time": "11/18/2022 3:56am",
+        "type": "simple",
+        "user_id": "3",
+        "channel_id": "1",
+    },
+    {
+        "message_id": "5",
+        "text": "good morning everyone",
+        "time": "11/20/2022 1:06pm",
+        "type": "full",
+        "user_id": "1",
+        "channel_id": "3",
+    },
+    {
+        "message_id": "6",
+        "text": "https://media.tenor.com/hILXUh8LJ2kAAAAd/dog-smiling.gif",
+        "time": "11/20/2022 1:07pm",
+        "type": "image",
+        "user_id": "3",
+        "channel_id": "3",
+    },
+    {
+        "message_id": "8",
+        "text": "hey",
+        "time": "11/20/2022 1:20pm",
+        "type": "full",
+        "user_id": "2",
+        "channel_id": "3",
+    },
+    {
+        "message_id": "9",
+        "text": "did anybody get the lecture from yesterday",
+        "time": "11/20/2022 1:20pm",
+        "type": "simple",
+        "user_id": "2",
+        "channel_id": "3",
+    },
+    {
+        "message_id": "10",
+        "text": "no",
+        "time": "11/20/2022 1:20pm",
+        "type": "full",
+        "user_id": "4",
+        "channel_id": "3",
+    },
+    {
+        "message_id": "11",
+        "text": "ok",
+        "time": "11/20/2022 1:25pm",
+        "type": "full",
+        "user_id": "2",
+        "channel_id": "3",
+    },
+]
+
 function getServer(serverId){
     return servers.find(server => server.server_id == serverId)
 }
@@ -213,7 +296,7 @@ function getUser(userId){
 }
 
 function getOnlineUsers(serverId){
-    const userIds = user_servers.filter(server => server.server_id == serverId)
+    const userIds = user_servers.filter(server => server.server_id === serverId)
     const users =  userIds.map(user => getUser(user.user_id))
     return users.filter(user => user.status != "offline")
 }
@@ -222,6 +305,10 @@ function getOfflineUsers(serverId){
     const userIds = user_servers.filter(server => server.server_id == serverId)
     const users =  userIds.map(user => getUser(user.user_id))
     return users.filter(user => user.status == "offline")
+}
+
+function getMessages(channelId){
+    return messages.filter(message => message.channel_id == channelId)
 }
 
 export {
@@ -233,5 +320,6 @@ export {
     getChannels,
     getUser,
     getOnlineUsers,
-    getOfflineUsers
+    getOfflineUsers,
+    getMessages
 }
